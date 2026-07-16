@@ -42,3 +42,10 @@ next-env.d.ts
 
 # Claude Code local (personal) settings
 .claude/settings.local.json
+
+# graphify — machine-specific / regenerable (keep graph.json, report, html, manifest)
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/.needs_update
