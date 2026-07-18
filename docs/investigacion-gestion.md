@@ -28,7 +28,8 @@ _Última actualización: 2026-07-17_
 - Refrescar tras cambios: `graphify update .` (gratis, sin LLM).
 
 ### Pendiente (próximos pasos sugeridos)
-- Definir backend/DB (probable **Supabase**, en línea con otros proyectos).
+- ~~Definir backend/DB (probable **Supabase**)~~ → **Decidido (2026-07-18): Neon (Postgres) +
+  Better Auth + Drizzle.** Setup hecho y documentado en [`setup-neon-betterauth.md`](./setup-neon-betterauth.md).
 - Modelo de datos: catálogo/stock, ventas/caja, comprobantes.
 - Spike de facturación en **homologación** con SDK de ARCA.
 
