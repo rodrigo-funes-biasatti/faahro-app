@@ -33,7 +33,7 @@ _Última actualización: 2026-07-18_
 | Conexión a la base (Pool de `pg` + Drizzle) | `src/lib/db/index.ts` |
 | Esquema de auth **generado** por la CLI de Better Auth (7 tablas: user, session, account, verification, organization, member, invitation) | `src/lib/db/auth-schema.ts` |
 | Punto de entrada del esquema (acá se suman los módulos futuros) | `src/lib/db/schema.ts` |
-| Config del servidor de auth (email+password, plugin `organization`) | `src/lib/auth.ts` |
+| Config del servidor de auth (email+password + Google, plugin `organization`) | `src/lib/auth.ts` — login con Google detallado en [`setup-google-oauth.md`](./setup-google-oauth.md) |
 | Cliente de auth para componentes React (`signIn`, `signUp`, `useSession`...) | `src/lib/auth-client.ts` |
 | Route handler que expone la API de auth (`/api/auth/*`) | `src/app/api/auth/[...all]/route.ts` |
 | Config de drizzle-kit | `drizzle.config.ts` |

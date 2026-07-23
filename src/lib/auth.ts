@@ -10,6 +10,14 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
+  // Login con Google (decisión de equipo, 2026-07-21). Credenciales de
+  // Google Cloud Console — ver docs/setup-google-oauth.md para conseguirlas.
+  socialProviders: {
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+    },
+  },
   // organization: multi-tenancy (Módulo 0 del modelo de datos).
   // Aporta organizaciones, miembros con rol e invitaciones.
   // nextCookies debe ir último en la lista de plugins.

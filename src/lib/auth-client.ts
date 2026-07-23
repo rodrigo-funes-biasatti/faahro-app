@@ -6,3 +6,9 @@ export const authClient = createAuthClient({
 });
 
 export const { signIn, signUp, signOut, useSession } = authClient;
+
+// Atajo para el botón "Continuar con Google": redirige a Google y vuelve a
+// callbackURL con la sesión ya creada.
+export function signInWithGoogle(callbackURL = "/") {
+  return authClient.signIn.social({ provider: "google", callbackURL });
+}
